@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Pattaya&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+body {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+header .jumbotron {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.overlay {
+    color: #fff;
+    text-align: center;
+}
+
+.overlay h1 {
+    font: 30px/60px 'Pattaya';
+    margin-top: 30px;
+}
+
+.overlay p {
+    font: 16px/32px 'Kaushan Script';
+}
+
+header nav {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+header ul {
+    display: flex;
+    width: 100%;
+    background-color: #ffcc99;
+    justify-content: center;
+    padding: 10px;
+}
+
+header ul li {
+    margin-right: 15px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul a {
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Montserrat';
+}
+
+header ul {
+    border-bottom: 2px solid #444;
+}
+
+main,
+#content article,
+aside {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+main p, footer p {
+    margin-top: 1em;
+    font-size: 15px;
+    line-height: 18px;
+    word-spacing: 1px;
+}
+
+#content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+#content figcaption {
+    font-size: 10px;
+    text-align: center;
+}
+
+#content article {
+    padding: 10px;
+}
+
+#content h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+aside h3 {
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+aside {
+    padding: 10px;
+    text-align: center;
+    height: max-content;
+}
+
+aside p.greets {
+    font-weight: 700;
+}
+
+aside p:last-child {
+    text-align: left;
+}
+
+aside img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+footer {
+    border-top: 2px solid #333;
+    background-color: #ffcc99;
+    padding: 20px 0;
+}
+
+.up {
+    position: fixed;
+    text-align: center;
+    font-weight: 700;
+    bottom: 50px;
+    right: 50px;
+    background-color: teal;
+    border-radius: 50%;
+    padding: 10px;
+    border: 3px solid #333;
+    opacity: .5;
+}
+
+.up:hover {
+    opacity: 1;
+}
+
+.up a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 612px) {
+    .overlay h1 {
+        margin-top: 40px;
+        font: 50px/100px 'Pattaya';
+    }
+
+    .overlay p {
+        font: 20px/32px 'Kaushan Script';
+    }
+
+    footer img {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media (min-width: 768px) {
+    .overlay h1 {
+        margin-top: 80px;
+        font: 70px/100px 'Pattaya';
+    }
+
+    .overlay p {
+        font: 30px/62px 'Kaushan Script';
+    }
+}
+
+@media (min-width: 1024px) {
+    .jumbotron {
+        width: 100%;
+        /* height: 400px; */
+    }
+
+    .jumbotron img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        object-position:    center;
+    }
+
+    .overlay h1 {
+        font: 90px/100px 'Pattaya';
+    }
+
+    .overlay p {
+        font: 30px/60px 'Kaushan Script';
+    }
+    
+
+    main {
+        display: flex;
+        margin: 10px 70px;
+    }
+
+    #content article {
+        margin-right: 0;
+    }
+
+    #content figcaption {
+        margin-top: 5px;
+        font-size: 13px;
+    }
+
+    #content, aside {
+        flex-basis: 50%;
+        flex-grow: 1;
+    }
+
+    aside {
+        flex-basis: 10%;
+        position: sticky;
+        top: 0;
+    }
+
+    aside img {
+        width: 100px;
+        height: 100px;
+    }
+}
